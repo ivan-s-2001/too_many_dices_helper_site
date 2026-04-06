@@ -1,0 +1,30 @@
+.home-page {
+  display: grid;
+  gap: 20px;
+}
+
+.home-page > header,
+.home-page > section {
+  padding: 18px;
+}
+
+.hero-grid,
+.reference-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.hero-card,
+.reference-card {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+}
+
+@media (min-width: 720px) {
+  .hero-grid,
+  .reference-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
