@@ -1,0 +1,158 @@
+.section-card {
+  padding: 18px;
+}
+
+.section-card__header {
+  margin-bottom: 14px;
+}
+
+.section-card__label {
+  margin: 0 0 6px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.section-card__title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.section-card__blocks {
+  display: grid;
+  gap: 14px;
+}
+
+.block {
+  margin: 0;
+}
+
+.block-paragraph,
+.block-list,
+.block-callout__text,
+.mini-card__text,
+.route-steps__text,
+.stat-grid dd {
+  line-height: 1.6;
+}
+
+.block-list,
+.block-callout__list,
+.mini-card__list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.block-callout {
+  padding: 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+}
+
+.block-callout--tip { border-color: var(--success); }
+.block-callout--attention { border-color: var(--accent); }
+.block-callout--warning { border-color: var(--warning); }
+.block-callout--mistake { border-color: var(--danger); }
+.block-callout--remember { border-color: var(--text-muted); }
+
+.block-callout__meta {
+  margin-bottom: 8px;
+  color: var(--text-muted);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.block-callout__title,
+.mini-card__title,
+.interactive-block h3 {
+  margin: 0 0 8px;
+}
+
+.cards-grid,
+.tracker-grid,
+.stat-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.mini-card,
+.interactive-block,
+.stat-grid__item {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-soft);
+}
+
+.checklist,
+.route-steps {
+  display: grid;
+  gap: 10px;
+}
+
+.checklist__item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.route-steps__item {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+}
+
+.route-steps__index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.tracker-field {
+  display: grid;
+  gap: 8px;
+}
+
+.tracker-field__label,
+.stat-grid dt {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.counter-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter-control button,
+.toggle-control,
+.secondary-button {
+  padding: 8px 10px;
+}
+
+.tracker-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.stat-grid dd {
+  margin: 6px 0 0;
+}
+
+@media (min-width: 720px) {
+  .cards-grid,
+  .tracker-grid,
+  .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
